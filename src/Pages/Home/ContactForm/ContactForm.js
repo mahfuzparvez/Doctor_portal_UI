@@ -16,7 +16,7 @@ const ContactForm = () => {
         e.preventDefault();
     }
     return (
-        <form onSubmit={handlContactMessageSubmit} style={{ backgroundColor: 'rgba(52, 59, 59)', color: 'white', marginBottom: '30px', height: '450px', paddingTop: '10px' }}>
+        <form onSubmit={handlContactMessageSubmit} style={{ backgroundColor: 'rgba(52, 59, 59)', color: 'white', height: '450px', paddingTop: '10px' }}>
             <p style={{ color: 'rgba(4, 250, 250)', fontWeight: 900 }}>CONTACT US</p>
             <h1>Always Connect with us</h1>
             <Box
@@ -29,7 +29,7 @@ const ContactForm = () => {
             >
                 <TextField style={{ backgroundColor: 'white', width: '50%' }} id="filled-basic" label="Email Address*" variant="filled" />
                 <TextField style={{ marginTop: '15px', marginBottom: '15px', backgroundColor: 'white', width: '50%' }} id="filled-basic" label="Subject*" variant="filled" />
-                <TextField style={{ backgroundColor: 'white', width: '50%', marginBottom: '30px' }} id="filled-basic" label="Your Message*" variant="filled" />
+                <TextField style={{ backgroundColor: 'white', width: '50%', marginBottom: '30px' }} id="filled-basic" multiline rows={3} label="Your Message*" variant="filled" />
             </Box>
             <Button type="submit" variant="contained">Submit</Button>
         </form>

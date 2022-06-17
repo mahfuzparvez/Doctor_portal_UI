@@ -14,7 +14,8 @@ const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: 400,
-    bgcolor: 'background.paper',
+    // bgcolor: 'background.paper',
+    backgroundColor: '#eceff1',
     border: '2px solid #000',
     boxShadow: 24,
     p: 4,
@@ -42,7 +43,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             serviceName: name,
             date: date.toLocaleDateString()
         }
-        fetch('http://localhost:5000/appointments', {
+        fetch('https://mysterious-sea-01290.herokuapp.com/appointments', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

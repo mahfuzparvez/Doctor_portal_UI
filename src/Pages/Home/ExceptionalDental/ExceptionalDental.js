@@ -10,7 +10,7 @@ const ExceptionalDental = () => {
         <Box style={{ padding: "50px" }}>
             <Grid container spacing={1}>
                 <Grid item xs={6}>
-                    <img style={{ width: "75%", height: "400px" }} src={treatment} alt="" />
+                    <img style={{ width: "75%", height: "400px", borderRadius: '10px' }} src={treatment} alt="" />
                 </Grid>
                 <Grid item xs={6}>
                     <Box style={{ textAlign: "left", marginTop: "30px" }}>

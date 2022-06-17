@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     }
     const handleAdminSubmint = e => {
         const user = { email }
-        fetch('http://localhost:5000/users/admin', {
+        fetch('https://mysterious-sea-01290.herokuapp.com/users/admin', {
             method: 'PUT',
             headers: {
                 'authorization': `Bearer ${token}`,
